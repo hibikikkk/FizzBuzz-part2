@@ -1,16 +1,18 @@
-if __name__=="__main__":
+def FizzBuzz_convert(number):
+    if number % 15 == 0:
+        return "FizzBuzz"
 
-    for numbers in range(1,101):
-        if numbers % 15 == 0:
-            print("FizzBuzz")
-            continue
+    elif number % 5 == 0:
+        return "Buzz"
 
-        if numbers % 5 == 0:
-            print("Buzz")
-            continue
+    elif number % 3 == 0:
+        return "Fizz"
 
-        if numbers % 3 == 0:
-            print("Fizz")
-            continue
+    else:
+        return str(number)
 
-        print(numbers)
+
+if __name__ == "__main__":
+
+    for numbers in range(1, 101):
+        print(FizzBuzz_convert(numbers))
