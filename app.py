@@ -8,8 +8,7 @@ def FizzBuzz_convert(number):
     elif number % 3 == 0:
         return "Fizz"
 
-    else:
-        return str(number)
+    return str(number)
 
 
 if __name__ == "__main__":
